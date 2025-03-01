@@ -27,3 +27,9 @@ On Windows:
 $ set DBUSER=username
 $ set DBPASS=password
 ```
+
+### Request to REST API
+GET /albums
+```bash
+$ curl http://localhost:8080/albums
+```

@@ -4,4 +4,5 @@ use (
 	./data-access
 	./greetings
 	./hello
+	./web-service-gin
 )

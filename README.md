@@ -47,3 +47,8 @@ $ curl http://localhost:8080/albums \
     --request "POST" \
     --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
 ```
+
+### Fuzz
+```bash
+$ go test -fuzz=Fuzz -fuzztime 30s
+```

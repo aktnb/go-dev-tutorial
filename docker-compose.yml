@@ -1,0 +1,17 @@
+services:
+  mysql:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    container_name: go-dev-tutorial-mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=recordings
+      - MYSQL_USER=go-dev-tutorial
+      - MYSQL_PASSWORD=tutorial
+    tmpfs:
+      - /var/lib/mysql
+    volumes:
+      - ./mysql/DB:/docker-entrypoint-initdb.d
+    ports:
+      - '3306:3306'

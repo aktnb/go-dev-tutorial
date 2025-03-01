@@ -34,6 +34,11 @@ GET /albums
 $ curl http://localhost:8080/albums
 ```
 
+GET /albums/:id
+```bash
+$ curl http://localhost:8080/albums/2
+```
+
 POST /albums
 ```bash
 $ curl http://localhost:8080/albums \
